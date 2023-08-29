@@ -5,7 +5,7 @@ from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 
-os.environ['OPENAI_API_KEY']= apikey
+os.environ['OPENAI_API_KEY']= st.secrets["API_KEY"]
 
 # App framework
 st.title('Laminar-X Tax 🛃 Advisor')
